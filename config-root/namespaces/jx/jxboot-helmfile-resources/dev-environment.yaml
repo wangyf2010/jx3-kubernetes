@@ -73,7 +73,7 @@ spec:
         key: production
       gitops: true
       ingress:
-        domain: ""
+        domain: 192.168.2.128.nip.io
         externalDNS: false
         namespaceSubDomain: -jx.
         tls:
