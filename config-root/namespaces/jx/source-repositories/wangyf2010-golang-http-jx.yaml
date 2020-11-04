@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: wangyf2010
+    provider: github
+    repository: golang-http-jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: wangyf2010-golang-http-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/wangyf2010/golang-http-jx.git
+  org: wangyf2010
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: golang-http-jx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/wangyf2010/golang-http-jx

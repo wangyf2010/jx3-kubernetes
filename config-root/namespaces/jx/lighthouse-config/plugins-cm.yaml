@@ -6,6 +6,14 @@ data:
       repos:
       - wangyf2010/jx3-kubernetes
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - wangyf2010/golang-http-jx
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - wangyf2010/jx-golang-http
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -20,6 +28,38 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      wangyf2010/golang-http-jx:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      wangyf2010/jx-golang-http:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       wangyf2010/jx3-kubernetes:
       - config-updater
       - approve
@@ -49,6 +89,14 @@ data:
     - repos:
       - wangyf2010/jx3-kubernetes
       trusted_org: todo
+    - repos:
+      - wangyf2010/golang-http-jx
+      trusted_org: todo
+    - repos:
+      - wangyf2010/jx-golang-http
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

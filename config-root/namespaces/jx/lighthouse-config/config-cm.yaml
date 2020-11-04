@@ -7,6 +7,8 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        wangyf2010/golang-http-jx: true
+        wangyf2010/jx-golang-http: true
         wangyf2010/jx3-kubernetes: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +21,8 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        wangyf2010/golang-http-jx: merge
+        wangyf2010/jx-golang-http: merge
         wangyf2010/jx3-kubernetes: merge
       queries:
       - labels:
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - wangyf2010/jx3-kubernetes
+        - wangyf2010/golang-http-jx
+        - wangyf2010/jx-golang-http
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +47,8 @@ data:
         - needs-rebase
         repos:
         - wangyf2010/jx3-kubernetes
+        - wangyf2010/golang-http-jx
+        - wangyf2010/jx-golang-http
       target_url: http://dashboard-jx.
 kind: ConfigMap
 metadata:
