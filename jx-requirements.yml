@@ -8,28 +8,46 @@ buildPacks:
     gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
 cluster:
   chartRepository: http://bucketrepo/bucketrepo/charts
-  clusterName: "kind"
+  clusterName: kind
   devEnvApprovers:
   - todo
-  environmentGitOwner: "todo"
+  environmentGitOwner: todo
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
-  project:  ""
   provider: kubernetes
-  registry: "ghcr.io"
-  zone: ""
+  registry: ghcr.io
 environments:
-- key: dev
-  owner: ""
-  repository: ""
-- key: staging
-  owner: ""
-  repository: ""
-- key: production
-  owner: ""
-  repository: ""
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  owner: wangyf2010
+  repository: jx3-kubernetes
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
 gitops: true
 ingress:
   domain: ""
@@ -40,6 +58,8 @@ ingress:
     enabled: false
     production: false
 kaniko: true
+pipelineUser:
+  username: wangyf2010
 repository: bucketrepo
 secretStorage: local
 storage:

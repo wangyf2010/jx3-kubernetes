@@ -29,6 +29,8 @@ jxRequirements:
         enabled: false
         production: false
     key: dev
+    owner: wangyf2010
+    repository: jx3-kubernetes
   - ingress:
       domain: ""
       externalDNS: false
@@ -57,6 +59,8 @@ jxRequirements:
       enabled: false
       production: false
   kaniko: true
+  pipelineUser:
+    username: wangyf2010
   repository: bucketrepo
   secretStorage: local
   storage:
