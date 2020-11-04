@@ -8,5 +8,6 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: golang-http-jx
     - name: jx-golang-http
     scheduler: in-repo
