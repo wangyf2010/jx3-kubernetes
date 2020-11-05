@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        wangyf2010/go-test-1104: true
         wangyf2010/golang-http-jx: true
         wangyf2010/jx-golang-http: true
         wangyf2010/jx3-kubernetes: true
@@ -21,6 +22,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        wangyf2010/go-test-1104: merge
         wangyf2010/golang-http-jx: merge
         wangyf2010/jx-golang-http: merge
         wangyf2010/jx3-kubernetes: merge
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - wangyf2010/jx3-kubernetes
+        - wangyf2010/go-test-1104
         - wangyf2010/golang-http-jx
         - wangyf2010/jx-golang-http
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - wangyf2010/jx3-kubernetes
+        - wangyf2010/go-test-1104
         - wangyf2010/golang-http-jx
         - wangyf2010/jx-golang-http
       target_url: http://dashboard-jx.192.168.2.128.nip.io

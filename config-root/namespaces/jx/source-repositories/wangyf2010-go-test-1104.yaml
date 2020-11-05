@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: wangyf2010
+    provider: github
+    repository: go-test-1104
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: wangyf2010-go-test-1104
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/wangyf2010/go-test-1104.git
+  org: wangyf2010
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: go-test-1104
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/wangyf2010/go-test-1104
