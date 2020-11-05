@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - wangyf2010/go-test-1104
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - wangyf2010/golang-http-jx
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -28,6 +32,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      wangyf2010/go-test-1104:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       wangyf2010/golang-http-jx:
       - approve
       - assign
@@ -88,6 +108,9 @@ data:
     triggers:
     - repos:
       - wangyf2010/jx3-kubernetes
+      trusted_org: todo
+    - repos:
+      - wangyf2010/go-test-1104
       trusted_org: todo
     - repos:
       - wangyf2010/golang-http-jx
