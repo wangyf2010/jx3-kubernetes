@@ -17,7 +17,7 @@ spec:
   promotionStrategy: Never
   source:
     ref: master
-    url: https://github.com/wangyf2010/jx3-kubernetes.git
+    url: https://github.corp.ebay.com/wangyf2010/jx3-kubernetes.git
   teamSettings:
     appsRepository: http://chartmuseum.jenkins-x.io
     bootRequirements: |
@@ -37,7 +37,7 @@ spec:
         environmentGitOwner: todo
         gitKind: github
         gitName: github
-        gitServer: https://github.com
+        gitServer: https://github.corp.ebay.com
         namespace: jx
         provider: kubernetes
         registry: ghcr.io

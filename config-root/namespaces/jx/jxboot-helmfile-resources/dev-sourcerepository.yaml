@@ -9,13 +9,13 @@ metadata:
   namespace: jx
 spec:
   description: "the git repository for the Dev environment"
-  provider: "https://github.com"
+  provider: "https://github.corp.ebay.com"
   providerKind: 'github'
   providerName: 'github'
   org: "wangyf2010"
   repo: "jx3-kubernetes"
-  httpCloneURL: "https://github.com/wangyf2010/jx3-kubernetes.git"
-  url: "https://github.com/wangyf2010/jx3-kubernetes.git"
+  httpCloneURL: "https://github.corp.ebay.com/wangyf2010/jx3-kubernetes.git"
+  url: "https://github.corp.ebay.com/wangyf2010/jx3-kubernetes.git"
   scheduler:
     kind: Scheduler
     name: "in-repo"

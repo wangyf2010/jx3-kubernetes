@@ -62,7 +62,7 @@ spec:
             - name: "GIT_KIND"
               value: "github"
             - name: "GIT_SERVER"
-              value: "https://github.com"
+              value: "https://github.corp.ebay.com"
             - name: "GIT_USER"
               value: wangyf2010
             - name: "GIT_TOKEN"

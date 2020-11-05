@@ -15,7 +15,7 @@ jxRequirements:
     environmentGitOwner: todo
     gitKind: github
     gitName: github
-    gitServer: https://github.com
+    gitServer: https://github.corp.ebay.com
     namespace: jx
     provider: kubernetes
     registry: ghcr.io
